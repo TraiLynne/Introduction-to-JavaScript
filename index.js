@@ -8,6 +8,11 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18;
+
+return votingAge >= 18 ?
+  true
+  : false;
 
 /*
 Task 1b - Values
@@ -34,6 +39,10 @@ Do the following:
 
    HINT: look up the Number method
 */
+
+let year = '1999';
+
+return Number(year);
 
 
 
@@ -260,9 +269,24 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(str) {
+  const vowels = [
+    'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'
+  ]
+  let count = 0;
+  
+  str.split('').forEach(l => {
+    vowels.forEach(v => {
+      if (l === v){
+        count++
+      } 
+    })
+  })
+  
+  return count;
 }
+
+vowelCounter('Trai');
 
 
 
