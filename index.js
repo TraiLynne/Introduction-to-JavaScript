@@ -1,13 +1,3 @@
-/*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
-
-/*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
-
-/*
-When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.
-This will usually entail console logging the answer directly or console logging the invocation (call) of the function so when it
-returns a value, that value will be logged to the console.  An example of this would be:  console.log(theFunction(value1,value2))
-*/
-
 /*
 Task 1a - Voting Age
 
@@ -17,7 +7,6 @@ Do the following:
 
    HINT: no function required
 */
-
 
 
 /*
@@ -58,9 +47,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a, b){
+    return a * b;
+}
 
 
 
