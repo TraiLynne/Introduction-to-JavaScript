@@ -63,8 +63,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
 
 
@@ -96,8 +96,26 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight, age){
+    if(age < 1){
+      if (age <= (1/3)) {
+        return weight * .1;
+      } else if (age  <= (7/12)){
+        return weight * .05;
+      } else {
+        return weight * .04;
+      }
+    } else {
+      if(weight <= 5){
+        return weight * .05;
+      } else if (weight <= 10){
+        return weight * .04;
+      } else if (weight <= 15){
+        return weight * .03;
+      } else {
+        return weight * .02;
+      }
+    }
   }
 
 
@@ -123,10 +141,31 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
+let choice = convertChoice(Math.random());
+
+function game(user, computer = choice){
     /*add your code here*/
+    if (user === computer ){
+      return "it's a tie"
+    } else if (
+      (user === 'scissors' && computer === 'paper')
+      ||(user === 'paper' && computer === 'rock')
+      || (user === 'rock' && computer === 'scissors')
+    ) {
+      return 'you win!'
+    } else {
+      return 'you lose!'
+    }
+
 }
-  
+
+function convertChoice(c){
+  return c <= (1/3) ?
+    'rock'
+    : c <= (2/3) ?
+      'paper'
+      : 'scissors'
+}
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
